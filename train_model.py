@@ -13,7 +13,7 @@ sns.set(style='white')
 # Load Data
 import pandas as pd
 
-dataset = pd.read_csv('/Users/manishuxuid/Desktop/FSDS/FSDS Notes/November Classes notes/5 Nov-Project MLOPS/CICD/cicdpipeline-main/iris.csv')
+dataset = pd.read_csv('iris.csv')
 
 
 # Feature names (Ensure no extra spaces or parentheses)
@@ -138,4 +138,5 @@ with open('scores.txt', "w") as score:
     score.write("F1 Score: %2.1f%%\n" % f1_lr)
     score.write("Recall Score: %2.1f%%\n" % recall_lr)
     score.write("Precision Score: %2.1f%%\n" % prec_lr)
+
 
